@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTCRAFT | HIGH-CAPACITY ELECTRIFICATION & NEXT-GEN POWER STORAGE</title>
+  <meta name="description" content="Architectural electrical engineering, 400A smart sub-panel conversions, Tesla Powerwall commercial micro-arrays, and industrial clean-sine wave balancing for high-demand modern architecture.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Navigation -->
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <div class="brand-group">
+        <span class="brand-name">VOLTCRAFT</span>
+        <span class="brand-badge">SMART GRID & HIGH-VOLTAGE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#section-0" class="nav-link">Smart Sub-Panels</a></li>
+        <li><a href="#section-1" class="nav-link">EV Fleet Infrastructure</a></li>
+        <li><a href="#section-2" class="nav-link">Powerwall Microgrids</a></li>
+        <li><a href="#section-3" class="nav-link">Load Calculator</a></li>
+      </ul>
+      <a href="#calculator" class="btn-pill">
+        <span>Inspect My Grid</span>
+        <span class="btn-icon-circle">↗</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow-pill">
+          <span class="pulse-dot"></span>
+          <span>SMART GRID & HIGH-VOLTAGE</span>
+        </div>
+        <h1 class="hero-title">HIGH-CAPACITY ELECTRIFICATION & NEXT-GEN POWER STORAGE</h1>
+        <p class="hero-desc">Architectural electrical engineering, 400A smart sub-panel conversions, Tesla Powerwall commercial micro-arrays, and industrial clean-sine wave balancing for high-demand modern architecture.</p>
+        <div class="hero-actions">
+          <a href="#calculator" class="btn-pill">
+            <span>Explore Technical Specifications</span>
+            <span class="btn-icon-circle">↗</span>
+          </a>
+          <a href="#services" class="btn-pill" style="background: rgba(255,255,255,0.06); color: var(--text-main); border: 1px solid var(--border);">
+            <span>Our Disciplines</span>
+            <span class="btn-icon-circle">↓</span>
+          </a>
+        </div>
+      </div>
+      <div class="bezel-outer hero-image-wrap">
+        <img src="assets/hero.jpg" alt="VOLTCRAFT Hero Presentation" class="hero-img" loading="eager">
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Simulator Section -->
+  <section id="calculator" class="section">
+    <div class="section-header">
+      <div class="eyebrow-pill">INTERACTIVE SIMULATOR</div>
+      <h2 class="section-title">Residential & Commercial Electrical Load Analyzer</h2>
+      <p class="section-subtitle">Calculate peak concurrent amperage, panel busbar capacity, and EV charging storage requirements before panel trips occur.</p>
+    </div>
+    
+    <div class="bezel-outer">
+      <div class="bezel-inner">
+        <div class="calc-box">
+          <div class="calc-inputs">
+            
+            <div class="input-group">
+              <label class="input-label" for="panelSize">Existing Service Amperage</label>
+              <select id="panelSize" class="select-styled">
+                <option value="100A Obsolete Fuse/Breaker">100A Obsolete Fuse/Breaker</option>
+                <option value="200A Standard Single Panel">200A Standard Single Panel</option>
+                <option value="400A Dual Busbar Smart Panel">400A Dual Busbar Smart Panel</option>
+                <option value="600A Commercial 3-Phase">600A Commercial 3-Phase</option>
+              </select>
+            </div>
+  
+
+            <div class="input-group">
+              <label class="input-label" for="evLoad">EV Level 2/3 Chargers</label>
+              <select id="evLoad" class="select-styled">
+                <option value="None Planned">None Planned</option>
+                <option value="1x 48A Level 2 Wall Connector">1x 48A Level 2 Wall Connector</option>
+                <option value="2x 48A High-Power Dual Chargers">2x 48A High-Power Dual Chargers</option>
+                <option value="Commercial DC Fast Charging Hub">Commercial DC Fast Charging Hub</option>
+              </select>
+            </div>
+  
+
+            <div class="input-group">
+              <label class="input-label" for="hvacInduction">Heat Pumps & Induction Ranges</label>
+              <select id="hvacInduction" class="select-styled">
+                <option value="Gas Standard (Low Amperage)">Gas Standard (Low Amperage)</option>
+                <option value="1x 5-Ton Heat Pump + Induction">1x 5-Ton Heat Pump + Induction</option>
+                <option value="Multi-Zone Variable Speed + Dual Ovens">Multi-Zone Variable Speed + Dual Ovens</option>
+                <option value="All-Electric High-Cap Smart Estate">All-Electric High-Cap Smart Estate</option>
+              </select>
+            </div>
+  
+          </div>
+          <div class="calc-output-card">
+            <div class="eyebrow-pill">SYSTEM DIAGNOSTIC</div>
+            <div id="calc-result-text" class="calc-output-val">INITIALIZING DATA...</div>
+            <p id="calc-result-desc" style="color: var(--text-muted); font-size: 0.95rem;">Select your parameters to run simulated load telemetry.</p>
+            <div style="margin-top: 24px;">
+              <a href="tel:8008658272" class="btn-pill">
+                <span>Direct Line: (800) 865-8272</span>
+                <span class="btn-icon-circle">📞</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Disciplines Bento Grid -->
+  <section id="services" class="section">
+    <div class="section-header">
+      <div class="eyebrow-pill">CORE DISCIPLINES</div>
+      <h2 class="section-title">Engineered Capabilities</h2>
+      <p class="section-subtitle">Exacting technical standards without compromise or shortcuts.</p>
+    </div>
+    <div class="services-grid">
+      
+        <div class="bezel-outer">
+          <div class="bezel-inner service-card">
+            <h3>400A Dual Smart Panel Upgrades</h3>
+            <p>Leviton or Span smart panels with real-time per-breaker telemetry and automated off-peak shed logic.</p>
+          </div>
+        </div>
+  
+
+        <div class="bezel-outer">
+          <div class="bezel-inner service-card">
+            <h3>Whole-Home Battery Microgrids</h3>
+            <p>Tesla Powerwall 3 and Enphase multi-battery arrays engineered for zero-second grid transfer and storm resilience.</p>
+          </div>
+        </div>
+  
+
+        <div class="bezel-outer">
+          <div class="bezel-inner service-card">
+            <h3>Level 2 & DC Fast Charging</h3>
+            <p>Dedicated 60A and 100A sub-circuits with dynamic load management protecting home grid headroom.</p>
+          </div>
+        </div>
+  
+
+        <div class="bezel-outer">
+          <div class="bezel-inner service-card">
+            <h3>Architectural Lutron Systems</h3>
+            <p>Commercial-grade Homeworks QSX lighting automation with whisper-quiet low-voltage keypads.</p>
+          </div>
+        </div>
+  
+    </div>
+  </section>
+
+  <!-- Visual Portfolio Showcase -->
+  <section class="section">
+    <div class="section-header">
+      <div class="eyebrow-pill">ARCHITECTURAL PORTFOLIO</div>
+      <h2 class="section-title">Verified Field Executions</h2>
+      <p class="section-subtitle">A visual chronicle of bespoke installations and documented case studies.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="bezel-outer gallery-card"><img src="assets/gallery1.jpg" alt="VOLTCRAFT Portfolio 1" loading="lazy"></div>
+      <div class="bezel-outer gallery-card"><img src="assets/gallery2.jpg" alt="VOLTCRAFT Portfolio 2" loading="lazy"></div>
+      <div class="bezel-outer gallery-card"><img src="assets/gallery3.jpg" alt="VOLTCRAFT Portfolio 3" loading="lazy"></div>
+      <div class="bezel-outer gallery-card"><img src="assets/gallery4.jpg" alt="VOLTCRAFT Portfolio 4" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section">
+    <div class="section-header">
+      <div class="eyebrow-pill">PEER VERIFICATION</div>
+      <h2 class="section-title">Reputation Built On Precision</h2>
+      <p class="section-subtitle">Unfiltered feedback from executive clients and architectural collaborators.</p>
+    </div>
+    <div class="testimonials-grid">
+      
+        <div class="bezel-outer">
+          <div class="bezel-inner testimonial-card">
+            <blockquote>"VOLTCRAFT cleanly installed two 48A EV chargers and a 400A Span smart panel without cutting an inch of unnecessary drywall."</blockquote>
+            <div class="testimonial-author">Dr. David Chen</div>
+            <div class="testimonial-role">Tech Executive & Lucid Air Owner</div>
+          </div>
+        </div>
+  
+
+        <div class="bezel-outer">
+          <div class="bezel-inner testimonial-card">
+            <blockquote>"Their low-voltage Lutron integration is flawless. True masters of architectural lighting."</blockquote>
+            <div class="testimonial-author">Samantha Miller</div>
+            <div class="testimonial-role">Interior Lighting Designer</div>
+          </div>
+        </div>
+  
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>VOLTCRAFT</h4>
+        <p>Architectural electrical engineering, 400A smart sub-panel conversions, Tesla Powerwall commercial micro-arrays, and industrial clean-sine wave balancing for high-demand modern architecture.</p>
+        <div style="font-size: 0.9rem; color: var(--accent); font-weight: 600;">
+          Direct Dispatch: (800) 865-8272<br>
+          Secure Communications: grid@voltcraft-electric.com
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Operations HQ</h5>
+        <ul>
+          <li>300 Powerline Blvd, Tech Sector 8</li>
+          <li>Licensed & Insured</li>
+          <li>24/7 Priority Readiness</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Standards</h5>
+        <ul>
+          <li>ISO-9001 Quality Control</li>
+          <li>Zero Sub-Contract Policy</li>
+          <li>Dedicated Project Director</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 VOLTCRAFT Guild. All rights reserved. Precision architectural web execution.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
